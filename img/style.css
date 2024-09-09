@@ -1,0 +1,493 @@
+/* GloBAL Style */
+
+:root {
+    --main-padding: 16px;
+    --main-margin: 16px;
+    --main-transition: 0.2s;
+    --main-gap: 16px
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: var(--main-transition);
+    user-select: none
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    line-height: 1.5;
+    font-family: "poppin", sans-serif;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle
+}
+
+
+
+.container {
+    width: 85% !important;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 40px 0
+}
+
+/* GloBAL Style */
+
+
+ /* Start Landing Page */
+
+ .landing {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("banner.png");
+    background-position:center ;
+    background-size: cover;
+    position: relative;
+}
+.nav{
+    width:100%;
+    position:absolute;
+    top: 0;
+}
+.nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .container .parent {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--main-gap);
+}
+.nav .container .parent .img {
+    width: 120px;
+    padding: var(--main-padding);
+  
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\      في مشكلة هنا */
+.nav ul {
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;  
+  /* position:fixed;
+   top: 0;
+    right: 0;  */
+ }
+.nav ul li a {
+    display: block ;
+    padding: var(--main-padding);
+   transition: var(--main-transition)
+}
+
+.landing .child{
+    width: 70%;
+    text-align: center;
+    margin: 0% auto;
+    color: black;
+    padding: var(--main-padding);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.landing .child p {
+    margin: var(--main-margin) 0
+}
+
+.landing .child button {
+    padding: var(--main-padding) calc(var(--main-padding) * 3);
+    background-color: transparent;
+    color: white;
+    border: 1px solid white
+}
+ /* end Landing Page */
+
+
+ /* paragraph */
+.parg {
+    margin: var(--main-margin);
+}
+.parg h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+ /* paragraph */
+
+ /* paragraph background */
+  /* .pargback{
+
+  }
+ .text1{
+    background-color: gray;
+    margin: var(--main-margin);
+  }
+ .text2{
+    background-color: gray;
+    margin: var(--main-margin);
+  }
+ .text3{
+    background-color: gray;
+    margin: var(--main-margin);
+  } */
+
+
+  .pargback{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text1, .text2, .text3 {
+    display: inline-block;
+    background-color: rgb(227, 220, 220);
+    padding: 30px;
+    margin: var(--main-margin);
+    text-align: left;
+  }
+
+ /* paragraph background */
+
+  /* paragraph2 */
+.parg2 {
+    margin: var(--main-margin);
+}
+.parg2 h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+ /* paragraph2 */ 
+ 
+ /* 3 photo */
+ .photo {
+    display: flex;
+  justify-content: center;
+  align-items: center; 
+ }
+ .img {
+    display: inline-block;
+    width: calc((85% / 3) - (32px / 3));
+    margin: 10px;
+ }
+
+  /* 3 photo */
+
+  /* paragraph3 */ 
+.parg3 {
+    margin: var(--main-margin);
+}
+.parg3 h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+  /* paragraph3 */ 
+  
+/* 3 photo box */
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; 
+    padding: 15px;
+    text-align: center;
+}
+
+
+.img img {
+    width: 100%;
+    height: auto;
+    max-width: 500px; 
+    display: block;
+    margin: 0 auto;
+}
+
+
+.content h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.content p {
+    font-size: 14px;
+    color: #666;
+}
+/* 3 photo box */
+
+
+  /* paragraph4 */ 
+
+.parg4 {
+    margin: var(--main-margin);
+}
+.parg4 h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+  /* paragraph4 */
+  
+  
+
+  /* 2 paragraph */
+
+  .textbox {
+    display: flex;
+    justify-content: space-around;
+    margin: var(--main-margin);
+    padding: var(--main-padding);
+  }
+  
+  .box1, .box2 {
+    padding: 20px;
+    text-align: center;
+    width: 25%;
+    background-color: rgb(224, 222, 222);
+  }
+  
+  .box2 {
+    background-color: rgb(224, 222, 222); 
+  }
+  
+  .box1 img, .box2 img {
+    width: 25px;
+    float: right;
+  }
+  /* 2 paragraph */
+
+  /* logo 2 */
+  .logo {
+    text-align: center; 
+    position: relative; 
+  }
+  
+  .logoimg {
+    position: relative; 
+  }
+  
+  .logoimg img {
+    width: 72%; 
+    height: 40vh; 
+  }
+  
+  .logotext {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    padding: 10px; 
+  }
+
+  .logotext button {
+    padding: var(--main-padding) calc(var(--main-padding) * 3);
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    font-size: larger;
+
+}
+  
+   /* logo 2 */
+
+
+     /* paragraph5 */ 
+
+.parg5 {
+    margin: var(--main-margin);
+    padding: var(--main-padding);
+}
+.parg5 h2{
+    text-align: center;
+    margin: var(--main-margin);
+    padding: var(--main-padding);
+}
+p{
+    text-align: center;
+}
+
+  /* paragraph5 */
+
+  /* photo end */
+
+  .endphoto {
+    text-align: center; 
+  }
+  
+  .endphoto img {
+    width: 25px; 
+    height: auto; 
+    margin: 1px; 
+  }
+
+   /* photo end */
+
+
+   /* end */
+   .footer {
+    margin: var(--main-margin);
+    padding: var(--main-padding);
+    background-color: black;
+    color: white;
+}
+   /* end */
+
+
+
+   /* media\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+   
+@media (min-width: 1200px) {
+    .container {
+        width: 85%;
+    }
+}
+
+
+@media (max-width: 1200px) and (min-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .photo {
+        flex-direction: column;
+    }
+
+    .textbox {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .landing{
+        align-items: flex-end;
+        color:white;
+    }
+    .landing .child{
+        color:white
+    }
+    .container {
+        width: 100%;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav .container .parent {
+        flex-direction: column;
+    }
+
+    .nav .container .parent .img {
+        margin-bottom: 10px;
+    }
+
+    .landing .child {
+        width: 100%;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .pargback {
+        flex-direction: column;
+    }
+
+    .photo {
+        flex-direction: column;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .textbox {
+        flex-direction: column;
+    }
+
+    .box1, .box2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .logoimg img {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo {
+        padding: 20px;
+    }
+
+    .logo button {
+        font-size: medium;
+        padding: 10px 20px;
+    }
+
+    .parg, .parg2, .parg3, .parg4, .parg5 {
+        padding: 10px;
+    }
+}
+
+
+
+
+   /* media\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+
+
